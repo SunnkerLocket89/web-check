@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^13.3.1",
-    "@astrojs/netlify": "^7.0.8",
+    "@astrojs/netlify": "^8.2.4",
     "@astrojs/node": "^10.0.6",
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/svelte": "^8.1.0",
