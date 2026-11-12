@@ -74,7 +74,7 @@
     "@astrojs/netlify": "^7.0.8",
     "@astrojs/node": "^10.0.6",
     "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/svelte": "^8.1.0",
+    "@astrojs/svelte": "^9.1.2",
     "@astrojs/ts-plugin": "^1.10.7",
     "@astrojs/vercel": "^10.0.6",
     "@typescript-eslint/parser": "^8.59.2",
