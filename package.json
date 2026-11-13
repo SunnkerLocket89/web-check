@@ -72,7 +72,7 @@
   "devDependencies": {
     "@astrojs/cloudflare": "^13.3.1",
     "@astrojs/netlify": "^7.0.8",
-    "@astrojs/node": "^10.0.6",
+    "@astrojs/node": "^11.1.12",
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/svelte": "^8.1.0",
     "@astrojs/ts-plugin": "^1.10.7",

@@ -34,6 +34,20 @@
   resolved "https://registry.npmjs.org/@astrojs/compiler/-/compiler-4.0.0.tgz"
   integrity sha512-eouss7G8ygdZqHuke033VMcVw5HTZUu+PXd/h06DGDUg/jt5btPYPqh66ENWw/mU78rBrf/oeC4oqoBwMtDMNA==
 
+"@astrojs/internal-helpers@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.13.2.tgz#fa0213b8e02a634773cff65b588fe5a327c1fa2d"
+  integrity sha512-SWiNS+OMrhwWYzJENTekHUyUCMKB+tdU6D4v1ZNIU1ZHh2mScQ8WIs0J6AJ8KPXkIrs9+EZU7Rm2CstfThyVnw==
+  dependencies:
+    "@types/hast" "^3.0.5"
+    "@types/mdast" "^4.0.4"
+    picomatch "^4.0.7"
+    retext-smartypants "^6.2.0"
+    shiki "^4.6.0"
+    smol-toml "^1.9.1"
+    unified "^11.0.5"
+    yaml "^2.9.1"
+
 "@astrojs/internal-helpers@0.9.0":
   version "0.9.0"
   resolved "https://registry.npmjs.org/@astrojs/internal-helpers/-/internal-helpers-0.9.0.tgz"
@@ -107,12 +121,12 @@
     tinyglobby "^0.2.15"
     vite "^7.3.2"
 
-"@astrojs/node@^10.0.6":
-  version "10.0.6"
-  resolved "https://registry.npmjs.org/@astrojs/node/-/node-10.0.6.tgz"
-  integrity sha512-e8JmaP4sGxqvdei14kmBzhAqgd5/L5MTExW3Hks5DOt9LDvGzlsFZwnXVXzWPVjW/PErl7t9uLg7xWhCqfkSrA==
+"@astrojs/node@^11.1.12":
+  version "11.1.12"
+  resolved "https://registry.yarnpkg.com/@astrojs/node/-/node-11.1.12.tgz#241baff4e98713b45f0d93714e77ad5712ce8809"
+  integrity sha512-DCvbBBzkviLxJGLzS+zh/9zhswM3j7IiYBpHym9pkc9cA3ZnDBcA0Te5xCedUZ7K1Suar1BTOI3aElkgw1YIkQ==
   dependencies:
-    "@astrojs/internal-helpers" "0.9.0"
+    "@astrojs/internal-helpers" "0.13.2"
     send "^1.2.1"
     server-destroy "^1.0.1"
 
@@ -2015,6 +2029,17 @@
     "@types/hast" "^3.0.4"
     hast-util-to-html "^9.0.5"
 
+"@shikijs/core@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-4.6.0.tgz#3016e9161dee1aa23bf5997d7d5768eb0ee93713"
+  integrity sha512-bfd4OKgvoyXYiYmMRuleA656P4V7M/Du9lcTl38Ngm6KszMj7bq4J1IGZwSYR4c95Tv5UQALtYNWUwaI9UT3xw==
+  dependencies:
+    "@shikijs/primitive" "4.6.0"
+    "@shikijs/types" "4.6.0"
+    "@shikijs/vscode-textmate" "^10.1.0"
+    "@types/hast" "^3.0.5"
+    hast-util-to-html "^9.0.6"
+
 "@shikijs/engine-javascript@4.0.2":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@shikijs/engine-javascript/-/engine-javascript-4.0.2.tgz"
@@ -2024,6 +2049,15 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     oniguruma-to-es "^4.3.4"
 
+"@shikijs/engine-javascript@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/engine-javascript/-/engine-javascript-4.6.0.tgz#036e1024fd15f32eb8bfeb4164ee22936c5e2a68"
+  integrity sha512-K0oqxFoL+kEMdz89mHLFO15Tsbv3kFZ6WR1cXZKMvLSc+oqaM00A6pyga1qSeXB22dP0tTiSApRcGBaKWsEccg==
+  dependencies:
+    "@shikijs/types" "4.6.0"
+    "@shikijs/vscode-textmate" "^10.1.0"
+    oniguruma-to-es "^4.3.6"
+
 "@shikijs/engine-oniguruma@4.0.2":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@shikijs/engine-oniguruma/-/engine-oniguruma-4.0.2.tgz"
@@ -2032,12 +2066,27 @@
     "@shikijs/types" "4.0.2"
     "@shikijs/vscode-textmate" "^10.0.2"
 
+"@shikijs/engine-oniguruma@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/engine-oniguruma/-/engine-oniguruma-4.6.0.tgz#a4c7badd658836d236ee054f0737d51a0748de64"
+  integrity sha512-aggd6Q7SuJOXNnsUbfG2XesxBJKBMAw/PDTUo9PyRjMaaJJ2dNrI+q0C+25ARXAK9yLHAlwxc9oRT2u68YKZ7w==
+  dependencies:
+    "@shikijs/types" "4.6.0"
+    "@shikijs/vscode-textmate" "^10.1.0"
+
 "@shikijs/langs@4.0.2":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@shikijs/langs/-/langs-4.0.2.tgz"
   integrity sha512-KaXby5dvoeuZzN0rYQiPMjFoUrz4hgwIE+D6Du9owcHcl6/g16/yT5BQxSW5cGt2MZBz6Hl0YuRqf12omRfUUg==
   dependencies:
     "@shikijs/types" "4.0.2"
+
+"@shikijs/langs@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/langs/-/langs-4.6.0.tgz#f222e0e7e91b3a1a5c0e3b38ae9b4fad954b1b7a"
+  integrity sha512-1yMEX3oCVV54LUq/ovfpRkDQoYDkcvjSWFFa/YLUDMiSoRzMi2uxLJYbv41ahT8Lu9lFMaa7hecd3Q39trqUyg==
+  dependencies:
+    "@shikijs/types" "4.6.0"
 
 "@shikijs/primitive@4.0.2":
   version "4.0.2"
@@ -2048,12 +2097,28 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
+"@shikijs/primitive@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/primitive/-/primitive-4.6.0.tgz#ed1a1e5958311f85fcd127c322660842a75fa504"
+  integrity sha512-c54+TQEo9ToqgfL/AU8FpjnV09+GA9Oa7M5ROkkXteZfp5XzpAJGXjjvZQFQioJOwm/w/6Z3lIzQstAkl8coag==
+  dependencies:
+    "@shikijs/types" "4.6.0"
+    "@shikijs/vscode-textmate" "^10.1.0"
+    "@types/hast" "^3.0.5"
+
 "@shikijs/themes@4.0.2":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@shikijs/themes/-/themes-4.0.2.tgz"
   integrity sha512-mjCafwt8lJJaVSsQvNVrJumbnnj1RI8jbUKrPKgE6E3OvQKxnuRoBaYC51H4IGHePsGN/QtALglWBU7DoKDFnA==
   dependencies:
     "@shikijs/types" "4.0.2"
+
+"@shikijs/themes@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/themes/-/themes-4.6.0.tgz#af595f0e7138ae661ff8975aa309612be1701309"
+  integrity sha512-qHAVAs80RiGD+IRuH9G+JPDOEc9A/kHsng4EzCUCwB9bLzW6Z0y9WETh2YyCcADJBmfrIaJ1Jp7KBNP6FHkgtQ==
+  dependencies:
+    "@shikijs/types" "4.6.0"
 
 "@shikijs/types@4.0.2":
   version "4.0.2"
@@ -2063,10 +2128,23 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
+"@shikijs/types@4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/types/-/types-4.6.0.tgz#30bed0c0b4954b15cf41654cfc0f98319a5e1a40"
+  integrity sha512-+ENG1adsKt/X7cRYw1Nl7BEpBmPOjmQ7bR/eGmHuMlT8gtOFf3KEi5l31DJYyAWhW6Y6bjP1plU7FmaxWGENFw==
+  dependencies:
+    "@shikijs/vscode-textmate" "^10.1.0"
+    "@types/hast" "^3.0.5"
+
 "@shikijs/vscode-textmate@^10.0.2":
   version "10.0.2"
   resolved "https://registry.npmjs.org/@shikijs/vscode-textmate/-/vscode-textmate-10.0.2.tgz"
   integrity sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==
+
+"@shikijs/vscode-textmate@^10.1.0":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/vscode-textmate/-/vscode-textmate-10.1.0.tgz#de59840c1d9903b5f5732dbc7852437003d35f11"
+  integrity sha512-cVBuhDQjBZaNMTwBquYfPydrUP+E3hE6oYGasx8h6ZrODIM7/r+gxLDXdd66oszbrggZHEntdE6j+5gYIVyMWQ==
 
 "@sindresorhus/is@^4.0.0":
   version "4.6.0"
@@ -2261,6 +2339,13 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/hast@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-3.0.5.tgz#48020de4c0e63492f4ca9db42068c108f68b7f8f"
+  integrity sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/http-cache-semantics@*":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.2.0.tgz#f6a7788f438cbfde15f29acad46512b4c01913b3"
@@ -2278,7 +2363,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/mdast@^4.0.0":
+"@types/mdast@^4.0.0", "@types/mdast@^4.0.4":
   version "4.0.4"
   resolved "https://registry.npmjs.org/@types/mdast/-/mdast-4.0.4.tgz"
   integrity sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==
@@ -5462,6 +5547,23 @@ hast-util-to-html@^9.0.0, hast-util-to-html@^9.0.5:
     stringify-entities "^4.0.0"
     zwitch "^2.0.4"
 
+hast-util-to-html@^9.0.6:
+  version "9.0.6"
+  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-9.0.6.tgz#249d71c9d2549b4c4953230e9327e5e6d6a22025"
+  integrity sha512-1SZUxCN3TtJAE7e2BQN2MBHsoZ1gnmi9GoCP5Di59CSWptIezSAW09yDZyVbanb78V9eCwrKqdQsjtfVTxYHWA==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    "@types/unist" "^3.0.0"
+    ccount "^2.0.0"
+    comma-separated-tokens "^2.0.0"
+    hast-util-whitespace "^3.0.0"
+    html-void-elements "^3.0.0"
+    mdast-util-to-hast "^13.0.0"
+    property-information "^7.0.0"
+    space-separated-tokens "^2.0.0"
+    stringify-entities "^4.0.0"
+    zwitch "^2.0.4"
+
 hast-util-to-parse5@^8.0.0:
   version "8.0.1"
   resolved "https://registry.npmjs.org/hast-util-to-parse5/-/hast-util-to-parse5-8.0.1.tgz"
@@ -7331,7 +7433,7 @@ oniguruma-parser@^0.12.2:
   resolved "https://registry.npmjs.org/oniguruma-parser/-/oniguruma-parser-0.12.2.tgz"
   integrity sha512-6HVa5oIrgMC6aA6WF6XyyqbhRPJrKR02L20+2+zpDtO5QAzGHAUGw5TKQvwi5vctNnRHkJYmjAhRVQF2EKdTQw==
 
-oniguruma-to-es@^4.3.4:
+oniguruma-to-es@^4.3.4, oniguruma-to-es@^4.3.6:
   version "4.3.6"
   resolved "https://registry.npmjs.org/oniguruma-to-es/-/oniguruma-to-es-4.3.6.tgz"
   integrity sha512-csuQ9x3Yr0cEIs/Zgx/OEt9iBw9vqIunAPQkx19R/fiMq2oGVTgcMqO/V3Ybqefr1TBvosI6jU539ksaBULJyA==
@@ -7673,7 +7775,7 @@ picocolors@^1.1.1:
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1, picomatch@^2.3.2, picomatch@^4.0.2, picomatch@^4.0.3, picomatch@^4.0.4:
+picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1, picomatch@^2.3.2, picomatch@^4.0.2, picomatch@^4.0.3, picomatch@^4.0.4, picomatch@^4.0.7:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.2.tgz#5a942915e26b372dc0f0e6753149a16e6b1c5601"
   integrity sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==
@@ -8696,6 +8798,20 @@ shiki@^4.0.0, shiki@^4.0.2:
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
+shiki@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-4.6.0.tgz#1f1bfbcdc908411d52b9c3fc7ac4a2d4297a2288"
+  integrity sha512-imjLsVHgPuWhvpU3P+zOekvMYqnel7QmKsFC4Sn0fCuAvaaalBsxwKEsrU8Ko5BdFnZA6Go/8a0RzahS634UgA==
+  dependencies:
+    "@shikijs/core" "4.6.0"
+    "@shikijs/engine-javascript" "4.6.0"
+    "@shikijs/engine-oniguruma" "4.6.0"
+    "@shikijs/langs" "4.6.0"
+    "@shikijs/themes" "4.6.0"
+    "@shikijs/types" "4.6.0"
+    "@shikijs/vscode-textmate" "^10.1.0"
+    "@types/hast" "^3.0.5"
+
 side-channel-list@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/side-channel-list/-/side-channel-list-1.0.1.tgz"
@@ -8777,6 +8893,11 @@ smol-toml@^1.6.0:
   version "1.6.1"
   resolved "https://registry.npmjs.org/smol-toml/-/smol-toml-1.6.1.tgz"
   integrity sha512-dWUG8F5sIIARXih1DTaQAX4SsiTXhInKf1buxdY9DIg4ZYPZK5nGM1VRIYmEbDbsHt7USo99xSLFu5Q1IqTmsg==
+
+smol-toml@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/smol-toml/-/smol-toml-1.9.1.tgz#1262834a084c3ce2985900450956a580f95cf243"
+  integrity sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ==
 
 socks-proxy-agent@^8.0.5:
   version "8.0.5"
@@ -10121,7 +10242,7 @@ yaml-language-server@~1.20.0:
     vscode-uri "^3.0.2"
     yaml "2.7.1"
 
-yaml@2.7.1, yaml@^1.10.0, yaml@^2.8.0, yaml@^2.8.2, yaml@^2.8.3:
+yaml@2.7.1, yaml@^1.10.0, yaml@^2.8.0, yaml@^2.8.2, yaml@^2.8.3, yaml@^2.9.1:
   version "2.8.4"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.4.tgz#4b5f411dd25f9544914d8673d4da7f29248e5e2e"
   integrity sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==
